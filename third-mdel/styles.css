@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #E8F5E9; /* Світло-зелений фон */
+  color: #333;
+  min-height: 100vh;
+  display: block; /* Змінено на block для табличної верстки */
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #2E7D32; /* Темно-зелений */
+  padding: 10px;
+  border-bottom: 2px solid #AED581; /* Світло-зелений */
+  overflow: hidden; /* Для правильного відображення floated елементів */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  float: left; /* Флотація логотипу */
+}
+
+.button-container {
+  text-align: center; /* Вирівнювання по правому краю */
+  margin: 20px 0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.intro {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #AED581; /* Світло-зелений */
+  margin-bottom: 20px;
+  overflow: hidden; /* Для правильного відображення floated елементів */
+}
+
+.intro-text {
+  float: left; /* Флотація текстового блоку */
+  width: 65%; /* Встановлюємо ширину */
+  padding-right: 20px;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2E7D32;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.join-button-container {
+  position: absolute; /* Робимо контейнер абсолютним */
+  top: 5px; /* Відстань від верхнього краю */
+  right: 5px; /* Відстань від правого краю */
+  z-index: 1000; /* Перекриваємо інші елементи, якщо потрібно */
+}
+
+.register-button {
+  padding: 10px 20px;
+  background-color: #66BB6A; /* Зелений */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.register-button:hover {
+  background-color: #388E3C; /* Темно-зелений */
+}
+
+.intro-image {
+  float: right; /* Флотація зображення */
+  width: 30%; /* Встановлюємо ширину */
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #AED581; /* Світло-зелений */
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+      overflow: visible; /* Вимкнення overflow для мобільних */
+  }
+
+  .intro-text {
+      float: none; /* Скидаємо флотацію для мобільних */
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .intro-image {
+      float: none; /* Скидаємо флотацію для мобільних */
+      width: 100%;
+      margin-top: 20px;
+  }
+}
+
+.features {
+  overflow: hidden; /* Для правильного відображення floated елементів */
+  margin: 40px 0;
+}
+
+.feature-card {
+  border: 2px solid #AED581; /* Світло-зелений */
+  padding: 20px;
+  background-color: white;
+  width: 30%;
+  float: left; /* Флотація карток */
+  margin-right: 2%; /* Відстань між картками */
+  text-align: center;
+}
+
+.feature-card:nth-child(3n) {
+  margin-right: 0; /* Вимкнення відстані для останнього елемента */
+}
+
+.guide {
+  text-align: center;
+}
+
+.guide h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2E7D32; /* Темно-зелений */
+}
+
+.steps {
+  overflow: hidden; /* Для правильного відображення floated елементів */
+  margin: 20px 0;
+}
+
+.step {
+  border: 2px solid #AED581; /* Світло-зелений */
+  padding: 20px;
+  background-color: white;
+  width: 18%;
+  float: left; /* Флотація кроків */
+  margin-right: 2%; /* Відстань між кроками */
+  text-align: center;
+}
+
+.step:nth-child(5n) {
+  margin-right: 0; /* Вимкнення відстані для останнього елемента */
+}
+
+@media (max-width: 768px) {
+  .features,
+  .steps {
+      float: none; /* Скидаємо флотацію для мобільних */
+  }
+
+  .feature-card,
+  .step {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: white;
+  border-top: 2px solid #AED581; /* Світло-зелений */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-logo {
+  font-size: 24px;
+  color: #2E7D32; /* Темно-зелений */
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto; /* Центрування списку */
+  display: flex; /* Використовуємо flex для розміщення в рядок */
+  flex-wrap: wrap; /* Дозволяємо обгортання */
+}
+
+.footer ul li {
+  width: 31%; /* Встановлюємо ширину для трьох стовпців */
+  margin: 5px; /* Додаємо вертикальні відстані між елементами */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #66BB6A;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer ul li:hover {
+  background-color: #388E3C;
+  color: white;
+}
