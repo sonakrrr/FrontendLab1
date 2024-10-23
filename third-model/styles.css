@@ -6,10 +6,10 @@
 }
 
 body {
-  background-color: #E8F5E9; /* Світло-зелений фон */
+  background-color: #E8F5E9;
   color: #333;
   min-height: 100vh;
-  display: block; /* Змінено на block для табличної верстки */
+  display: block;
 }
 
 .container {
@@ -18,21 +18,21 @@ body {
 }
 
 .header {
-  background-color: #2E7D32; /* Темно-зелений */
+  background-color: #2E7D32;
   padding: 10px;
-  border-bottom: 2px solid #AED581; /* Світло-зелений */
-  overflow: hidden; /* Для правильного відображення floated елементів */
+  border-bottom: 2px solid #AED581;
+  overflow: hidden;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: white;
-  float: left; /* Флотація логотипу */
+  float: left;
 }
 
 .button-container {
-  text-align: center; /* Вирівнювання по правому краю */
+  text-align: center;
   margin: 20px 0;
 }
 
@@ -43,14 +43,14 @@ body {
 .intro {
   padding: 20px;
   background-color: white;
-  border: 2px solid #AED581; /* Світло-зелений */
+  border: 2px solid #AED581;
   margin-bottom: 20px;
-  overflow: hidden; /* Для правильного відображення floated елементів */
+  overflow: hidden;
 }
 
 .intro-text {
-  float: left; /* Флотація текстового блоку */
-  width: 65%; /* Встановлюємо ширину */
+  float: left;
+  width: 65%;
   padding-right: 20px;
 }
 
@@ -67,15 +67,15 @@ body {
 }
 
 .join-button-container {
-  position: absolute; /* Робимо контейнер абсолютним */
-  top: 5px; /* Відстань від верхнього краю */
-  right: 5px; /* Відстань від правого краю */
-  z-index: 1000; /* Перекриваємо інші елементи, якщо потрібно */
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1000;
 }
 
 .register-button {
   padding: 10px 20px;
-  background-color: #66BB6A; /* Зелений */
+  background-color: #66BB6A;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -83,63 +83,63 @@ body {
 }
 
 .register-button:hover {
-  background-color: #388E3C; /* Темно-зелений */
+  background-color: #388E3C;
 }
 
 .intro-image {
-  float: right; /* Флотація зображення */
-  width: 30%; /* Встановлюємо ширину */
+  float: right;
+  width: 30%;
 }
 
 .intro-image img {
   width: 100%;
   height: auto;
-  border: 2px solid #AED581; /* Світло-зелений */
+  border: 2px solid #AED581;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
   .intro {
-      overflow: visible; /* Вимкнення overflow для мобільних */
+      overflow: visible;
   }
 
   .intro-text {
-      float: none; /* Скидаємо флотацію для мобільних */
+      float: none;
       width: 100%;
       padding-right: 0;
       text-align: center;
   }
 
   .intro-image {
-      float: none; /* Скидаємо флотацію для мобільних */
+      float: none;
       width: 100%;
       margin-top: 20px;
   }
 }
 
 .features {
-  overflow: hidden; /* Для правильного відображення floated елементів */
+  overflow: hidden;
   margin: 40px 0;
-  background-image: url('/images/ukraine.jpg'); /* Додаємо фон */
-  background-size: cover; /* Щоб зображення повністю покривало блок */
-  background-position: center; /* Вирівнюємо фон по центру */
-  padding: 40px 20px; /* Збільшуємо внутрішній відступ для контенту */
-  border: 2px solid #AED581; /* Залишаємо світло-зелений бордюр */
+  background-image: url('/images/ukraine.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  border: 2px solid #AED581;
 }
 
 
 .feature-card {
-  border: 2px solid #AED581; /* Світло-зелений */
+  border: 2px solid #AED581;
   padding: 20px;
   background-color: white;
   width: 30%;
-  float: left; /* Флотація карток */
-  margin-right: 2%; /* Відстань між картками */
+  float: left;
+  margin-right: 2%;
   text-align: center;
 }
 
 .feature-card:nth-child(3n) {
-  margin-right: 0; /* Вимкнення відстані для останнього елемента */
+  margin-right: 0;
 }
 
 .guide {
@@ -149,32 +149,32 @@ body {
 .guide h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #2E7D32; /* Темно-зелений */
+  color: #2E7D32;
 }
 
 .steps {
-  overflow: hidden; /* Для правильного відображення floated елементів */
+  overflow: hidden;
   margin: 20px 0;
 }
 
 .step {
-  border: 2px solid #AED581; /* Світло-зелений */
+  border: 2px solid #AED581;
   padding: 20px;
   background-color: white;
   width: 18%;
-  float: left; /* Флотація кроків */
-  margin-right: 2%; /* Відстань між кроками */
+  float: left;
+  margin-right: 2%;
   text-align: center;
 }
 
 .step:nth-child(5n) {
-  margin-right: 0; /* Вимкнення відстані для останнього елемента */
+  margin-right: 0;
 }
 
 @media (max-width: 768px) {
   .features,
   .steps {
-      float: none; /* Скидаємо флотацію для мобільних */
+      float: none;
   }
 
   .feature-card,
@@ -187,28 +187,28 @@ body {
 .footer {
   padding: 20px;
   background-color: white;
-  border-top: 2px solid #AED581; /* Світло-зелений */
+  border-top: 2px solid #AED581;
   margin-top: 20px;
   width: 100%;
 }
 
 .footer-logo {
   font-size: 24px;
-  color: #2E7D32; /* Темно-зелений */
+  color: #2E7D32;
 }
 
 .footer ul {
   list-style-type: none;
   padding: 0;
   width: 60%;
-  margin: 0 auto; /* Центрування списку */
-  display: flex; /* Використовуємо flex для розміщення в рядок */
-  flex-wrap: wrap; /* Дозволяємо обгортання */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer ul li {
-  width: 31%; /* Встановлюємо ширину для трьох стовпців */
-  margin: 5px; /* Додаємо вертикальні відстані між елементами */
+  width: 31%;
+  margin: 5px;
   padding: 10px;
   text-align: center;
   border-radius: 5px;

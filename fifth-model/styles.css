@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #E8F5E9; /* Світло-зелений фон */
+  background-color: #E8F5E9;
   color: #333;
 }
 
@@ -19,15 +19,15 @@ body {
 
 .header {
   text-align: center;
-  background-color: #2E7D32; /* Темно-зелений */
+  background-color: #2E7D32;
   padding: 10px;
-  border-bottom: 2px solid #AED581; /* Світло-зелений */
+  border-bottom: 2px solid #AED581;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  color: white; /* Білий текст для контрасту */
+  color: white;
 }
 
 .content {
@@ -44,10 +44,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; /* Align image and text in a row */
-  width: 100%; /* Встановлюємо ширину на 100% */
-  background-color: white; /* Білий фон */
-  padding: 10px; /* Додаємо відступи для вмісту */
+  flex-direction: row; 
+  width: 100%;
+  background-color: white;
+  padding: 10px;
 }
 
 .hero-content {
@@ -58,7 +58,7 @@ body {
 .hero-image {
   width: 300px;
   height: 200px;
-  margin-right: 20px; /* Add spacing between the image and text */
+  margin-right: 20px;
 }
 
 .hero-text {
@@ -72,15 +72,15 @@ body {
   width: 100%;
   max-width: 80%;
   flex-wrap: wrap;
-  background-color: white; /* Білий фон */
-  padding: 20px; /* Додаємо відступи */
+  background-color: white;
+  padding: 20px;
 }
 
 .service-box {
   background-color: white;
   padding: 20px;
   border: 2px solid #AED581;
-  width: 45%; /* Adjust width to accommodate only two blocks */
+  width: 45%;
   text-align: center;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -101,16 +101,16 @@ body {
 .subscribe-section input[type="email"] {
   padding: 10px;
   width: 200px;
-  border: 1px solid #AED581; /* Світло-зелений */
+  border: 1px solid #AED581;
   margin-right: 10px;
 }
 
 .subscribe-section button {
   padding: 10px 20px;
-  background-color: #2E7D32; /* Темно-зелений */
+  background-color: #2E7D32;
   border: none;
   cursor: pointer;
-  color: white; /* Білий текст для контрасту */
+  color: white;
 }
 
 .footer {
@@ -125,15 +125,14 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  table-layout: fixed; /* Додаємо, щоб всі колонки мали однакову ширину */
+  table-layout: fixed;
 }
 
 .footer td {
   padding: 10px;
-  width: 33.33%; /* Додаємо однакову ширину для кожної колонки */
+  width: 33.33%; 
 }
 
-/* Адаптація для мобільних телефонів */
 @media (max-width: 768px) {
   .services-section {
       flex-direction: column;
@@ -148,11 +147,11 @@ body {
 @media (max-width: 480px) {
   .service-box {
       width: 100%;
-      margin: 0; /* Скидаємо відступи */
+      margin: 0;
   }
 
   .hero-section {
-      padding: 0; /* Скидаємо внутрішні відступи */
+      padding: 0;
   }
 }
 

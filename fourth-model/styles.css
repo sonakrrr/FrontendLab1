@@ -6,26 +6,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E8F5E9; /* Світло-зелений фон */
+    background-color: #E8F5E9;
     color: #333;
 }
 
 .header {
     text-align: center;
-    background-color: #2E7D32; /* Темно-зелений */
+    background-color: #2E7D32;
     padding: 10px;
-    border-bottom: 2px solid #AED581; /* Світло-зелений */
+    border-bottom: 2px solid #AED581;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    color: white; /* Білий текст для контрасту */
+    color: white;
 }
 
 .content {
     width: 100%;
-    padding-top: 60px; /* Відступ для заголовка */
+    padding-top: 60px;
 }
 
 table {
@@ -35,22 +35,22 @@ table {
 
 .main-column {
     width: 75%;
-    vertical-align: top; /* Вирівнювання по верхньому краю */
+    vertical-align: top;
 }
 
 .sidebar {
     width: 25%;
     background-color: white;
     padding: 20px;
-    border-left: 2px solid #AED581; /* Світло-зелений */
-    vertical-align: top; /* Вирівнювання по верхньому краю */
+    border-left: 2px solid #AED581;
+    vertical-align: top;
 }
 
 .post {
     margin: 10px;
     padding: 20px;
     background-color: #fff;
-    border: 2px solid #AED581; /* Світло-зелений */
+    border: 2px solid #AED581;
     overflow: hidden;
 }
 
@@ -74,32 +74,30 @@ table {
 .post h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2E7D32; /* Темно-зелений */
+    color: #2E7D32;
 }
 
 .nature-images {
-    display: flex; /* Використання flexbox для горизонтального вирівнювання */
+    display: flex;
     margin: 20px 0;
 }
 
 .nature-image {
-    width: 50%; /* Кожна фотографія займає 50% ширини */
-    position: relative; /* Для абсолютного позиціонування зображення */
-    overflow: hidden; /* Приховує частини зображення, що виходять за межі контейнера */
-    aspect-ratio: 4 / 3; /* Встановлюємо співвідношення сторін 4:3 */
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
 }
 
 .nature-image img {
-    position: absolute; /* Абсолютне позиціонування зображення */
-    top: 50%; /* Центрування зображення */
-    left: 50%; /* Центрування зображення */
-    width: 100%; /* Ширина зображення на 100% */
-    height: 100%; /* Висота зображення на 100% */
-    object-fit: cover; /* Зображення буде покривати весь контейнер */
-    transform: translate(-50%, -50%); /* Центрування зображення */
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 
-/* Стилі для бокового меню */
 .sidebar-item {
     margin-bottom: 30px;
 }
@@ -107,14 +105,13 @@ table {
 .sidebar h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #2E7D32; /* Темно-зелений */
+    color: #2E7D32;
 }
 
 .sidebar p {
     margin-bottom: 20px;
 }
 
-/* Медіа-запити для планшетів і мобільних пристроїв */
 @media (max-width: 1024px) {
     .main-column {
         width: 100%;
@@ -122,7 +119,7 @@ table {
 
     .sidebar {
         width: 100%;
-        margin-top: 20px; /* Відступ зверху */
+        margin-top: 20px;
         border-left: none;
         border-top: 2px solid #AED581;
     }
@@ -206,7 +203,6 @@ table {
     }
 }
 
-/* Медіа-запити для великого екрану */
 @media (min-width: 3000px) {
     body {
         font-size: 20px;
