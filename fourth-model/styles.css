@@ -77,6 +77,29 @@ table {
     color: #2E7D32; /* Темно-зелений */
 }
 
+.nature-images {
+    display: flex; /* Використання flexbox для горизонтального вирівнювання */
+    margin: 20px 0;
+}
+
+.nature-image {
+    width: 50%; /* Кожна фотографія займає 50% ширини */
+    position: relative; /* Для абсолютного позиціонування зображення */
+    overflow: hidden; /* Приховує частини зображення, що виходять за межі контейнера */
+    aspect-ratio: 4 / 3; /* Встановлюємо співвідношення сторін 4:3 */
+}
+
+.nature-image img {
+    position: absolute; /* Абсолютне позиціонування зображення */
+    top: 50%; /* Центрування зображення */
+    left: 50%; /* Центрування зображення */
+    width: 100%; /* Ширина зображення на 100% */
+    height: 100%; /* Висота зображення на 100% */
+    object-fit: cover; /* Зображення буде покривати весь контейнер */
+    transform: translate(-50%, -50%); /* Центрування зображення */
+}
+
+/* Стилі для бокового меню */
 .sidebar-item {
     margin-bottom: 30px;
 }
@@ -89,6 +112,98 @@ table {
 
 .sidebar p {
     margin-bottom: 20px;
+}
+
+/* Медіа-запити для планшетів і мобільних пристроїв */
+@media (max-width: 1024px) {
+    .main-column {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px; /* Відступ зверху */
+        border-left: none;
+        border-top: 2px solid #AED581;
+    }
+
+    .post-content {
+        width: 100%;
+    }
+
+    .post-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .post h2 {
+        font-size: 20px;
+    }
+
+    .sidebar h3 {
+        font-size: 16px;
+    }
+
+    .sidebar p {
+        font-size: 14px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post-image {
+        width: 100%;
+    }
+
+    .post-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .post h2 {
+        font-size: 18px;
+    }
+
+    .sidebar h3 {
+        font-size: 14px;
+    }
+
+    .sidebar p {
+        font-size: 12px;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    .post-image {
+        width: 100%;
+    }
+
+    .post-content {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
 }
 
 /* Медіа-запити для великого екрану */
@@ -110,23 +225,6 @@ table {
     }
 
     .header {
-        font-size: 22px;
-        padding: 20px;
-    }
-
-    .post {
-        padding: 30px;
-    }
-
-    .post-image {
-        width: 40%;
-    }
-
-    .post-content {
-        width: 55%;
-    }
-
-    .sidebar {
-        top: 80px;
+        font-size: 32px;
     }
 }

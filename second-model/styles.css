@@ -1,3 +1,4 @@
+/* Базові стилі для всіх екранів */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -61,8 +62,8 @@ body {
 }
 
 .cart {
-    display: flex; /* Застосування Flexbox */
-    align-items: center; /* Вертикальне вирівнювання */
+    display: flex;
+    align-items: center;
 }
 
 .cart button {
@@ -94,6 +95,7 @@ body {
     position: fixed;
     top: 50px;
     left: 0;
+    overflow: hidden;
 }
 
 .sidebar nav ul {
@@ -125,8 +127,8 @@ body {
 
 .product-table {
     width: 100%;
-    display: flex; /* Застосування Flexbox для ряду продуктів */
-    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий ряд */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -135,8 +137,8 @@ body {
     padding: 10px;
     background-color: white;
     text-align: center;
-    flex: 1 0 calc(25% - 20px); /* Розміщення чотирьох карток в ряд */
-    max-width: calc(25% - 20px); /* Максимальна ширина для чотирьох карток */
+    flex: 1 0 calc(25% - 20px); /* Початкові стилі для чотирьох карток в ряд */
+    max-width: calc(25% - 20px);
 }
 
 .product-image img {
@@ -170,6 +172,44 @@ body {
     background-color: #388E3C;
 }
 
+/* Адаптивна верстка для різних розмірів екранів */
+@media screen and (max-width: 1200px) {
+    .product-card {
+        flex: 1 0 calc(33.33% - 20px); /* Три картки в ряд */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-card {
+        flex: 1 0 calc(50% - 20px); /* Дві картки в ряд */
+        max-width: calc(50% - 20px);
+    }
+    
+    .sidebar {
+        width: 20%; /* Збільшення ширини бокової панелі на середніх екранах */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-card {
+        flex: 1 0 calc(100% - 20px); /* Одна картка в ряд */
+        max-width: calc(100% - 20px);
+    }
+    
+    .sidebar {
+        width: 100%; /* Бокова панель займає весь екран на мобільних пристроях */
+        position: relative;
+        border-right: none;
+    }
+    
+    .product-grid {
+        margin-left: 0; /* Немає місця для відступу зліва на маленьких екранах */
+        width: 100%;
+    }
+}
+
+/* Стилі для надвеликих екранів */
 @media screen and (min-width: 3000px) {
     .container {
         max-width: 3000px;
@@ -186,7 +226,7 @@ body {
 
     .product-card {
         padding: 20px;
-        flex: 1 0 calc(25% - 20px); /* Залишаємо чотири картки у ряд */
+        flex: 1 0 calc(25% - 20px); /* Чотири картки в ряд */
         max-width: calc(25% - 20px);
     }
 

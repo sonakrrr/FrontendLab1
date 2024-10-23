@@ -120,7 +120,13 @@ body {
 .features {
   overflow: hidden; /* Для правильного відображення floated елементів */
   margin: 40px 0;
+  background-image: url('/images/ukraine.jpg'); /* Додаємо фон */
+  background-size: cover; /* Щоб зображення повністю покривало блок */
+  background-position: center; /* Вирівнюємо фон по центру */
+  padding: 40px 20px; /* Збільшуємо внутрішній відступ для контенту */
+  border: 2px solid #AED581; /* Залишаємо світло-зелений бордюр */
 }
+
 
 .feature-card {
   border: 2px solid #AED581; /* Світло-зелений */
